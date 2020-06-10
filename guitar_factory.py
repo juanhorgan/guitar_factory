@@ -215,9 +215,9 @@ assembler_gen = env.process(assembler_maker_gen(env, guitar_factory))
 env.run(until = total_time)
 
 
-print('Pre paint has {0} bodys and {1} necks ready to be painted'.format(
+print('Pre paint has {0} bodies and {1} necks ready to be painted'.format(
     guitar_factory.body_pre_paint.level, guitar_factory.neck_pre_paint.level))
-print('Post paint has {0} bodys and {1} necks ready to be assembled'.format(
+print('Post paint has {0} bodies and {1} necks ready to be assembled'.format(
     guitar_factory.body_post_paint.level, guitar_factory.neck_post_paint.level))
 print(f'Dispatch has %d guitars ready to go!' % guitar_factory.dispatch.level)
 print(f'----------------------------------')
